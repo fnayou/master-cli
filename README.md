@@ -1,6 +1,6 @@
 # MasterCli
 
-minimalistic cli tool made with [Slave] (based on symfony/console). it offer :
+minimalistic cli tool made with [Slave] based on `symfony/console`. it offer :
 
   - auto registration of commands
   - auto load of parameters/configuration from `app\config.yml` 
