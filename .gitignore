@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# Cache and logs (Symfony2)
+/app/cache/*
+/app/logs/*
+!app/cache/.gitkeep
+!app/logs/.gitkeep
+
+# Parameters
+/app/config.yml
+
+# Managed by Composer
+/composer.phar
+/composer.lock
+/vendor/

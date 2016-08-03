@@ -1,0 +1,11 @@
+## configuration file
+config:
+    slave:
+        name: 'My App'      # name of your cli application
+        version: '1.0.0'    # version of your cli application
+        description: 'small description about my application' # description of your cli application
+    parameters:             # globals parameters that you can define and use within your cli application
+        something: cool
+    logger:                 # configuration for monolog
+        channel: main       # monolog channel name
+        level: DEBUG        # monolog channel level : DEBUG, INFO, NOTICE, WARNING, ERROR, CRITICAL, ALERT, EMERGENCY or 100, 200, 250, 300, 400, 500, 550, 600

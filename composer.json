@@ -1,0 +1,48 @@
+{
+    "name": "fnayou/master-cli",
+    "description": "minimalistic cli tool made with fnayou/slave (based on symfony/console)",
+    "type": "framework",
+    "homepage": "https://gitlab.com/fnayou/master-cli",
+    "require": {
+        "fnayou/slave": "^1.0",
+        "symfony/debug": "^3.1"
+    },
+    "require-dev": {
+        "symfony/debug": "^3.1",
+        "symfony/var-dumper": "^3.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aymen FNAYOU",
+            "email": "fnayou.aymen@gmail.com",
+            "homepage": "http://aymen-fnayou.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://gitlab.com/fnayou/slave.git"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ],
+        "post-update-cmd": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
+        ]
+    },
+    "extra": {
+        "incenteev-parameters": {
+            "parameter-key": "config",
+            "file": "app/config.yml"
+        }
+    }
+}
