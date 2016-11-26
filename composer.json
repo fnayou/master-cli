@@ -2,15 +2,7 @@
     "name": "fnayou/master-cli",
     "description": "minimalistic cli tool made with fnayou/slave (based on symfony/console)",
     "type": "framework",
-    "homepage": "https://gitlab.com/fnayou/master-cli",
-    "require": {
-        "fnayou/slave": "^1.0",
-        "symfony/debug": "^3.1"
-    },
-    "require-dev": {
-        "symfony/debug": "^3.1",
-        "symfony/var-dumper": "^3.1"
-    },
+    "homepage": "https://github.com/fnayou/master-cli",
     "license": "MIT",
     "authors": [
         {
@@ -20,24 +12,45 @@
             "role": "Developer"
         }
     ],
+    "require": {
+        "php": ">=5.6.0",
+        "fnayou/slave": "^1.0",
+        "symfony/debug": "^3.1"
+    },
+    "require-dev": {
+        "symfony/debug": "^3.1",
+        "symfony/var-dumper": "^3.1",
+        "escapestudios/symfony2-coding-standard": "^2.9",
+        "friendsofphp/php-cs-fixer": "^1.12",
+        "phpunit/phpunit": "5.1.4"
+    },
     "autoload" : {
         "psr-4" : {
             "": "src/"
         }
     },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://gitlab.com/fnayou/slave.git"
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
-    ],
+    },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
-        ]
+        ],
+        "test": "bin/phpunit",
+        "sniff": "bin/phpcs --standard=vendor/escapestudios/symfony2-coding-standard/Symfony2 src",
+        "fix": "bin/php-cs-fixer --level=symfony fix src/"
+    },
+    "config": {
+        "platform": {
+            "php": "5.6.0"
+        },
+        "bin-dir": "bin",
+        "sort-packages": true
     },
     "extra": {
         "incenteev-parameters": {

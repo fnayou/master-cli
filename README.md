@@ -1,4 +1,5 @@
-# MasterCli
+MasterCli
+=========
 
 minimalistic cli tool made with [Slave] based on `symfony/console`. it offer :
 
@@ -8,10 +9,11 @@ minimalistic cli tool made with [Slave] based on `symfony/console`. it offer :
 
 > MasterCli offer all that you want to start a quick and small console based project.
 
-### Version
+## Version
   - 08/2016 : v1.0.0
+  - 12/2016 : v1.0.1 : move to the github
 
-### Tech
+## Technologies
 
 MasterCli uses a number of open source projects to work properly:
 
@@ -20,7 +22,7 @@ MasterCli uses a number of open source projects to work properly:
 * [Pimple] - PHP Dependency Injection Container.
 * [Monolog] - Logging for PHP.
 
-### Installation
+## Installation
 
 You need composer:
 
@@ -34,20 +36,19 @@ and next, all you have to do is :
 $ php slave list
 ```
 
-### Todos
+## Todos
 
  - lot of things
 
-License
-----
+## License
 
 MIT
 
 
-© 2015 [Aymen Fnayou Inc.]
+© 2015 [Aymen Fnayou]
 
-   [Aymen Fnayou Inc.]: <https://aymen-fnayou.com>
-   [Slave]: <https://gitlab.com/fnayou/slave>
+   [Aymen Fnayou]: <https://aymen-fnayou.com>
+   [Slave]: <https://github.com/fnayou/slave>
    [Symfony Components]: <http://symfony.com/fr/components>
    [Pimple]: <http://pimple.sensiolabs.org/>
    [Monolog]: <https://github.com/Seldaek/monolog>
