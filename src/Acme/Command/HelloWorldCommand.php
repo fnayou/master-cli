@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the MasterCli package.
+ *
+ * Copyright (c) 2016. Aymen FNAYOU <fnayou.aymen@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Acme\Command;
 
@@ -8,8 +16,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 /**
- * Class HelloWorldCommand
- * @package Slave\Command
+ * Class HelloWorldCommand.
  */
 class HelloWorldCommand extends Command
 {
@@ -28,7 +35,7 @@ class HelloWorldCommand extends Command
         $this->setName('acme:hello-world')
             ->setDescription('simple hello world command')
             ->setHelp(
-                <<<EOT
+                <<<'EOT'
 will output a hello world messages 
 EOT
             );
@@ -47,7 +54,7 @@ EOT
     }
 
     /**
-     * @inheritdoc
+     * {@inheritdoc}
      *
      * @see \Symfony\Component\Console\Command\Command::execute()
      */
