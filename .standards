@@ -1,0 +1,8 @@
+# standard used by PHP CodeSniffer (required)
+standard=vendor/escapestudios/symfony2-coding-standard/Symfony2
+
+# allowed files and directories (optional)
+src/
+
+# ignored files and directories (optional)
+!tests

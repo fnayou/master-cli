@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46d8a691013799ca2da813de721ed118",
-    "content-hash": "a9368b0c71fb30c3ba0e18e2250e1f76",
+    "hash": "754b608024b8efa2541c6bda579a4e50",
+    "content-hash": "646f6d7248087a0921d2174787cbe728",
     "packages": [
         {
             "name": "fnayou/slave",
@@ -823,6 +823,58 @@
                 "phpcs"
             ],
             "time": "2016-03-14 16:38:04"
+        },
+        {
+            "name": "fnayou/standards",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fnayou/standards.git",
+                "reference": "858f916bd32524eef42e4adb6d88557ddcfe0159"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fnayou/standards/zipball/858f916bd32524eef42e4adb6d88557ddcfe0159",
+                "reference": "858f916bd32524eef42e4adb6d88557ddcfe0159",
+                "shasum": ""
+            },
+            "require": {
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "escapestudios/symfony2-coding-standard": "Symfony2 PHP CodeSniffer Coding Standard",
+                "pragmarx/laravelcs": "Laravel CodeSniffer Coding Standard",
+                "yiisoft/yii2-coding-standards": "Yii CodeSniffer Coding Standard"
+            },
+            "bin": [
+                "standards"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aymen FNAYOU",
+                    "email": "fnayou.aymen@gmail.com",
+                    "homepage": "http://aymen-fnayou.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Code Sniffer configurator.",
+            "homepage": "https://github.com/fnayou/standards",
+            "keywords": [
+                "code",
+                "configurator",
+                "laravel",
+                "php",
+                "phpcs",
+                "sniffer",
+                "symfony",
+                "yii"
+            ],
+            "time": "2016-12-10 21:27:37"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
@@ -1999,16 +2051,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
                 "shasum": ""
             },
             "require": {
@@ -2073,7 +2125,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-01 23:53:02"
+            "time": "2016-11-30 04:02:31"
         },
         {
             "name": "symfony/process",

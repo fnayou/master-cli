@@ -18,11 +18,12 @@
         "symfony/debug": "^3.1"
     },
     "require-dev": {
-        "symfony/debug": "^3.1",
-        "symfony/var-dumper": "^3.1",
         "escapestudios/symfony2-coding-standard": "^2.9",
+        "fnayou/standards": "^1.0",
         "friendsofphp/php-cs-fixer": "^1.12",
-        "phpunit/phpunit": "5.1.4"
+        "phpunit/phpunit": "5.1.4",
+        "symfony/debug": "^3.1",
+        "symfony/var-dumper": "^3.1"
     },
     "autoload" : {
         "psr-4" : {
@@ -42,7 +43,7 @@
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters"
         ],
         "test": "bin/phpunit",
-        "sniff": "bin/phpcs --standard=vendor/escapestudios/symfony2-coding-standard/Symfony2 src",
+        "stdr": "bin/standards",
         "fix": "bin/php-cs-fixer --level=symfony fix src/"
     },
     "config": {
