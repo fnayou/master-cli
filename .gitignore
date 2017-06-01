@@ -12,3 +12,9 @@
 # Managed by Composer
 /bin
 /vendor
+
+# phpunit
+phpunit.xml
+
+# php-cs-fixer
+.php_cs.cache

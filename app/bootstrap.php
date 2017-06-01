@@ -1,14 +1,14 @@
 <?php
 
+use Slave\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
-use Slave\Application;
 
 // if you don't want to setup permissions the proper way,
 //just uncomment the following PHP line
 //umask(0000);
 
-defined('SLAVE_ROOT_DIR') or define('SLAVE_ROOT_DIR', realpath(__DIR__.'/..'));
+defined('SLAVE_ROOT_DIR') || define('SLAVE_ROOT_DIR', realpath(__DIR__.'/..'));
 
 /** @var \Composer\Autoload\ClassLoader $loader */
 $loader = require SLAVE_ROOT_DIR.'/vendor/autoload.php';
@@ -42,4 +42,6 @@ try {
 } catch (\Exception $e) {
     // Catch any exceptions.
     echo $e->getMessage();
+    echo $e->getLine().' '.$e->getFile();
+    echo $e->getTraceAsString();
 }
