@@ -23,7 +23,7 @@
     },
     "require": {
         "php": ">=5.6.0",
-        "fnayou/slave": "^1.0"
+        "fnayou/slave": "dev-reboot"
     },
     "require-dev": {
         "escapestudios/symfony2-coding-standard": "^2.10",
